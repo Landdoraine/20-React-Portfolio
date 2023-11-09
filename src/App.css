@@ -1,0 +1,137 @@
+/* Global Styles */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card Styles */
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Mobile-First Design */
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background-color: darkgrey;
+}
+
+.main-content {
+  width: 100%;
+  padding: 1rem;
+}
+
+.avatar-image {
+  max-width: 50%;
+  height: auto;
+}
+
+.project-card img {
+  max-width: 50%;
+  height: auto;
+}
+
+.project-card {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+
+.project-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s;
+}
+
+.project-image:hover img {
+  opacity: 0.7;
+}
+
+.project-image:hover .overlay {
+  opacity: 1;
+}
+
+.footer-links img {
+  width: 50px;
+  height: 50px;
+}
+
+.footer-links {
+  display: flex;
+  list-style: none;
+  padding: 0; /* Corrected from padding: 5; */
+  justify-content: center;
+}
+
+.footer-links li {
+  margin-right: 20px;
+}
+
+.skills-list {
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Larger Screens Styles */
+@media (min-width: 768px) {
+  .app.dark-theme {
+    background-color: darkgrey;
+    color: #fff;
+  }
+
+  .app.dark-theme .nav-link {
+    color: #fff;
+  }
+
+  .app.dark-theme .nav-link.active {
+    background-color: #333;
+  }
+
+  .main-content {
+    padding: 2rem;
+  }
+
+  .about-me,
+  .portfolio {
+    font-size: 1.4rem;
+  }
+}
