@@ -14,7 +14,7 @@ This is my portfolio page created using React, it is still in development so loo
 
 ## Usage
 
-The app has been deployed on Netlify:
+The app has been deployed on Netlify: https://ubiquitous-paprenjak-8163c0.netlify.app/
 
 ## License
 
